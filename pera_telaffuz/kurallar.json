@@ -1,0 +1,11 @@
+{
+  "kelimeler": {
+    "hata": "hatâ", "hatayı": "hataayı", "devamını": "devâmını",
+    "tekrar": "tekrâr", "güncel": "gün cel"
+  },
+  "kokler": {
+    "hata": "hataa", "hafıza": "haafıza", "adalet": "adaalet",
+    "beraber": "beraaber", "ifade": "ifaade", "numune": "numuune"
+  },
+  "ekler": ["lı", "sız", "lar", "ları", "ların", "larına", "larını", "lardan", "da", "dan", "ya", "yı", "nın", "nı", "na", "m", "mı", "mın", "mız", "mızın", "nız", "nızın", "sı", "sını", "sında", "sından", "sına", "sının", "lılar", "sızlık", "lık", "lıdır", "i", "e", "in", "le", "li", "siz", "te", "ten", "tir", "ler", "leri", "lerin", "lerine", "lerini", "lerden", "liğini", "yi", "ye", "nin", "de", "den", "dir", "yle", "si", "sini", "sine", "sinde", "sinden", "sinin"]
+}
