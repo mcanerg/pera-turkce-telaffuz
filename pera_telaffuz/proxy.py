@@ -92,21 +92,25 @@ def make_handler(upstream):
     return Handler
 
 
-def main():
-    parser = argparse.ArgumentParser(description='Pera Türkçe telaffuz TTS ara katmanı')
-    parser.add_argument('--upstream', required=True, help='Mevcut OpenAI uyumlu ses motorunun /v1 adresi')
-    parser.add_argument('--host', default='127.0.0.1', help='Dinleme adresi (varsayılan: yalnızca bu bilgisayar)')
-    parser.add_argument('--port', default=5051, type=int)
-    args = parser.parse_args()
-    handler = make_handler(args.upstream)
-    server = ThreadingHTTPServer((args.host, args.port), handler)
-    print(f'Pera TTS ara katmanı {args.host}:{args.port} üzerinde hazır.', flush=True)
+def serve(upstream, host='127.0.0.1', port=5051):
+    handler = make_handler(upstream)
+    server = ThreadingHTTPServer((host, port), handler)
+    print(f'Pera TTS ara katmanı {host}:{port} üzerinde hazır.', flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:
         pass
     finally:
         server.server_close()
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Pera Türkçe telaffuz TTS ara katmanı')
+    parser.add_argument('--upstream', required=True, help='Mevcut OpenAI uyumlu ses motorunun /v1 adresi')
+    parser.add_argument('--host', default='127.0.0.1', help='Dinleme adresi (varsayılan: yalnızca bu bilgisayar)')
+    parser.add_argument('--port', default=5051, type=int)
+    args = parser.parse_args()
+    serve(args.upstream, args.host, args.port)
 
 
 if __name__ == '__main__':
