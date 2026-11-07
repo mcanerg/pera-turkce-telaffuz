@@ -24,6 +24,10 @@ Bir dosyadan da okuyabilirsiniz:
 python3 -m pera_telaffuz < metin.txt
 ```
 
+## Open WebUI
+
+OpenAI uyumlu bir ses motoru kullanıyorsanız [Open WebUI kurulum rehberine](docs/open-webui.md) bakın. Deneysel bağlantı, sohbet yazısını değiştirmeden ses motoruna gönderilen metni hazırlar.
+
 ## Kendi yerel asistanına ekle
 
 Klasörü asistan projenize alın veya yerel olarak yükleyin (`python3 -m pip install .`). Asistanın seslendirme yaptığı yerde, görünen yanıtın bir kopyasını ses motoruna göndermeden önce dönüştürün:
